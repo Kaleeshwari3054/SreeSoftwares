@@ -1,32 +1,33 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, MessageSquare } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <header className="bg-white shadow-sm sticky-top">
+      <div className="container-fluid">
+        <div className="d-flex justify-content-between align-items-center py-3">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="d-flex align-items-center text-decoration-none">
             <img 
-              src="/almodesk_logo.jpeg" 
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDIwMCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNDAiIGhlaWdodD0iODAiIHJ4PSIyMCIgZmlsbD0iI0VGNDQ0NCIvPgo8Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSI4IiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSI3MCIgY3k9IjQwIiByPSI4IiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSIxMDAiIGN5PSI0MCIgcj0iOCIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTEyMCA2MEwxNDAgODBMMTIwIDEwMFoiIGZpbGw9IiNFRjQ0NDQiLz4KPHRleHQgeD0iMTAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzFENEVEOCI+QUxNT0RFU0s8L3RleHQ+Cjx0ZXh0IHg9IjEwIiB5PSIxNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzM3NDE1MSI+TW9iaWxlIFRyYWNrZXI8L3RleHQ+Cjwvc3ZnPgo=" 
               alt="Almodesk Logo" 
-              className="h-12 w-auto"
+              className="me-2"
+              style={{ height: '48px', width: 'auto' }}
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-red-500 transition-colors">Home</Link>
-            <a href="#features" className="text-gray-700 hover:text-red-500 transition-colors">Features</a>
-            <Link to="/pricing" className="text-gray-700 hover:text-red-500 transition-colors">Pricing</Link>
-            <a href="#contact" className="text-gray-700 hover:text-red-500 transition-colors">Contact</a>
+          <nav className="d-none d-md-flex align-items-center">
+            <Link to="/" className="text-decoration-none text-gray-700 hover-text-red-500 me-4">Home</Link>
+            <a href="#features" className="text-decoration-none text-gray-700 hover-text-red-500 me-4">Features</a>
+            <Link to="/pricing" className="text-decoration-none text-gray-700 hover-text-red-500 me-4">Pricing</Link>
+            <a href="#contact" className="text-decoration-none text-gray-700 hover-text-red-500 me-4">Contact</a>
             <Link 
               to="/register" 
-              className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors"
+              className="btn bg-blue-600 text-white px-4 py-2 rounded-pill hover-bg-blue-700 text-decoration-none"
             >
               Start Free Trial
             </Link>
@@ -34,24 +35,24 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden"
+            className="btn d-md-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t">
-            <div className="flex flex-col space-y-4">
-              <Link to="/" className="text-gray-700 hover:text-red-500 transition-colors">Home</Link>
-              <a href="#features" className="text-gray-700 hover:text-red-500 transition-colors">Features</a>
-              <Link to="/pricing" className="text-gray-700 hover:text-red-500 transition-colors">Pricing</Link>
-              <a href="#contact" className="text-gray-700 hover:text-red-500 transition-colors">Contact</a>
+          <div className="d-md-none py-3 border-top">
+            <div className="d-flex flex-column">
+              <Link to="/" className="text-decoration-none text-gray-700 hover-text-red-500 py-2">Home</Link>
+              <a href="#features" className="text-decoration-none text-gray-700 hover-text-red-500 py-2">Features</a>
+              <Link to="/pricing" className="text-decoration-none text-gray-700 hover-text-red-500 py-2">Pricing</Link>
+              <a href="#contact" className="text-decoration-none text-gray-700 hover-text-red-500 py-2">Contact</a>
               <Link 
                 to="/register" 
-                className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors w-fit"
+                className="btn bg-blue-600 text-white px-4 py-2 rounded-pill hover-bg-blue-700 text-decoration-none mt-2 align-self-start"
               >
                 Start Free Trial
               </Link>

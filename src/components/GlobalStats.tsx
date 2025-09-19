@@ -3,62 +3,68 @@ import { Users, Globe, Heart } from 'lucide-react';
 
 const GlobalStats = () => {
   return (
-    <section className="bg-gradient-to-br from-cyan-50 to-blue-100 py-20 relative">
+    <section className="gradient-bg-cyan py-5 position-relative">
       {/* World Map Background Effect */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="w-full h-full bg-gradient-to-r from-green-400 to-blue-500"></div>
+      <div className="position-absolute top-0 start-0 w-100 h-100" style={{ opacity: 0.1 }}>
+        <div className="w-100 h-100 gradient-bg-green"></div>
       </div>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold text-blue-900 mb-8">ALMODESK</h2>
+      <div className="container position-relative">
+        <div className="text-center mb-5">
+          <h2 className="display-2 fw-bold text-blue-900 mb-4">ALMODESK</h2>
         </div>
 
         {/* Stats Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-blue-200 text-center transform hover:scale-105 transition-transform">
-            <div className="flex items-center justify-center mb-4">
-              <Users className="w-8 h-8 text-red-500 mr-2" />
+        <div className="row g-4 mb-5">
+          <div className="col-md-4">
+            <div className="bg-white rounded-custom p-4 shadow-custom border border-blue-200 text-center hover-scale">
+              <div className="d-flex align-items-center justify-content-center mb-3">
+                <Users className="text-red-500 me-2" size={32} />
+              </div>
+              <div className="display-4 fw-bold text-red-500 mb-2">10,000+</div>
+              <div className="fs-5 fw-semibold text-blue-900">Users Worldwide</div>
             </div>
-            <div className="text-4xl font-bold text-red-500 mb-2">10,000+</div>
-            <div className="text-xl font-semibold text-blue-900">Users Worldwide</div>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-blue-200 text-center transform hover:scale-105 transition-transform">
-            <div className="flex items-center justify-center mb-4">
-              <Globe className="w-8 h-8 text-red-500 mr-2" />
+          <div className="col-md-4">
+            <div className="bg-white rounded-custom p-4 shadow-custom border border-blue-200 text-center hover-scale">
+              <div className="d-flex align-items-center justify-content-center mb-3">
+                <Globe className="text-red-500 me-2" size={32} />
+              </div>
+              <div className="display-4 fw-bold text-red-500 mb-2">50+</div>
+              <div className="fs-5 fw-semibold text-blue-900">Countries</div>
             </div>
-            <div className="text-4xl font-bold text-red-500 mb-2">50+</div>
-            <div className="text-xl font-semibold text-blue-900">Countries</div>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-blue-200 text-center transform hover:scale-105 transition-transform">
-            <div className="flex items-center justify-center mb-4">
-              <Heart className="w-8 h-8 text-red-500 mr-2" />
+          <div className="col-md-4">
+            <div className="bg-white rounded-custom p-4 shadow-custom border border-blue-200 text-center hover-scale">
+              <div className="d-flex align-items-center justify-content-center mb-3">
+                <Heart className="text-red-500 me-2" size={32} />
+              </div>
+              <div className="display-4 fw-bold text-red-500 mb-2">2,000+</div>
+              <div className="fs-5 fw-semibold text-blue-900">Happy Customers</div>
             </div>
-            <div className="text-4xl font-bold text-red-500 mb-2">2,000+</div>
-            <div className="text-xl font-semibold text-blue-900">Happy Customers</div>
           </div>
         </div>
 
         {/* Trust Message */}
         <div className="text-center space-y-6">
-          <h3 className="text-3xl md:text-4xl font-bold text-blue-900">
+          <h3 className="display-5 fw-bold text-blue-900">
             Trusted Globally for Family,<br />
             Business & Security Tracking
           </h3>
-          <p className="text-2xl font-semibold text-blue-800">
+          <p className="fs-3 fw-semibold text-blue-900">
             One App – Unlimited Safety,<br />
             Anywhere in the World
           </p>
         </div>
 
         {/* Red dots representing global presence */}
-        <div className="absolute top-20 left-20 w-3 h-3 bg-red-500 rounded-full animate-ping"></div>
-        <div className="absolute top-32 right-32 w-3 h-3 bg-red-500 rounded-full animate-ping" style={{animationDelay: '0.5s'}}></div>
-        <div className="absolute bottom-32 left-40 w-3 h-3 bg-red-500 rounded-full animate-ping" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-20 right-20 w-3 h-3 bg-red-500 rounded-full animate-ping" style={{animationDelay: '1.5s'}}></div>
-        <div className="absolute top-40 left-1/2 w-3 h-3 bg-red-500 rounded-full animate-ping" style={{animationDelay: '2s'}}></div>
+        <div className="position-absolute animate-ping bg-red-500 rounded-circle" style={{ top: '80px', left: '80px', width: '12px', height: '12px' }}></div>
+        <div className="position-absolute animate-ping bg-red-500 rounded-circle" style={{ top: '128px', right: '128px', width: '12px', height: '12px', animationDelay: '0.5s' }}></div>
+        <div className="position-absolute animate-ping bg-red-500 rounded-circle" style={{ bottom: '128px', left: '160px', width: '12px', height: '12px', animationDelay: '1s' }}></div>
+        <div className="position-absolute animate-ping bg-red-500 rounded-circle" style={{ bottom: '80px', right: '80px', width: '12px', height: '12px', animationDelay: '1.5s' }}></div>
+        <div className="position-absolute animate-ping bg-red-500 rounded-circle" style={{ top: '160px', left: '50%', width: '12px', height: '12px', animationDelay: '2s' }}></div>
       </div>
     </section>
   );
