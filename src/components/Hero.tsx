@@ -47,67 +47,11 @@ const Hero = () => {
 
           {/* Right Content - Phone Mockup with Features */}
           <div className="relative">
-            <div className="relative mx-auto w-80 h-96">
-              {/* Phone Frame */}
-              <div className="bg-gray-800 rounded-3xl p-3 shadow-2xl">
-                <div className="bg-white rounded-2xl h-full relative overflow-hidden">
-                  {/* Phone Screen Content */}
-                  <div className="p-6 h-full flex flex-col items-center justify-center">
-                    <div className="bg-blue-600 rounded-2xl p-4 mb-4">
-                      <MapPin className="w-12 h-12 text-white" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">ALMODESK</h3>
-                    <p className="text-gray-600 text-center mb-4">Real-Time Tracking</p>
-                    <div className="bg-green-500 rounded-full p-4">
-                      <Smartphone className="w-8 h-8 text-white" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Feature Icons Around Phone */}
-              <div className="absolute -top-4 -left-4">
-                <div className="bg-green-500 rounded-full p-3 shadow-lg animate-pulse">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div>
-                <p className="text-sm mt-2 text-center font-medium">Real-Time<br />GPS Tracking</p>
-              </div>
-
-              <div className="absolute -top-4 -right-4">
-                <div className="bg-red-500 rounded-full p-3 shadow-lg animate-pulse">
-                  <Shield className="w-6 h-6 text-white" />
-                </div>
-                <p className="text-sm mt-2 text-center font-medium">Geo-Fence<br />Alerts</p>
-              </div>
-
-              <div className="absolute -bottom-4 -left-4">
-                <div className="bg-purple-500 rounded-full p-3 shadow-lg animate-pulse">
-                  <Users className="w-6 h-6 text-white" />
-                </div>
-                <p className="text-sm mt-2 text-center font-medium">Multi-Device<br />Support</p>
-              </div>
-
-              <div className="absolute -bottom-4 -right-4">
-                <div className="bg-orange-500 rounded-full p-3 shadow-lg animate-pulse">
-                  <Battery className="w-6 h-6 text-white" />
-                </div>
-                <p className="text-sm mt-2 text-center font-medium">Battery<br />Monitoring</p>
-              </div>
-
-              <div className="absolute top-1/2 -left-8 transform -translate-y-1/2">
-                <div className="bg-blue-500 rounded-full p-3 shadow-lg animate-pulse">
-                  <Clock className="w-6 h-6 text-white" />
-                </div>
-                <p className="text-sm mt-2 text-center font-medium">24/7<br />Monitoring</p>
-              </div>
-
-              <div className="absolute top-1/2 -right-8 transform -translate-y-1/2">
-                <div className="bg-pink-500 rounded-full p-3 shadow-lg animate-pulse">
-                  <MessageSquare className="w-6 h-6 text-white" />
-                </div>
-                <p className="text-sm mt-2 text-center font-medium">Smart<br />Alerts</p>
-              </div>
-            </div>
+            <img 
+              src="/WhatsApp Image 2025-09-13 at 6.22.45 PM (1).jpeg" 
+              alt="Almodesk Mobile Tracking App Features" 
+              className="w-full max-w-lg h-auto rounded-2xl shadow-2xl"
+            />
           </div>
         </div>
       </div>

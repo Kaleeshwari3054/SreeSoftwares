@@ -9,13 +9,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="bg-red-500 rounded-lg p-2">
-                <MessageSquare className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">ALMODESK</h3>
-                <p className="text-sm text-gray-400">Mobile Tracker</p>
-              </div>
+              <img 
+                src="/almodesk_logo.jpeg" 
+                alt="Almodesk Logo" 
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-gray-400">
               World's most powerful mobile tracking application designed for family, education, and business use.

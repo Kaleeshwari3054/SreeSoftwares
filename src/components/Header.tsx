@@ -11,13 +11,11 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-red-500 rounded-lg p-2">
-              <MessageSquare className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-gray-900">ALMODESK</h1>
-              <p className="text-xs text-gray-500">Mobile Tracker</p>
-            </div>
+            <img 
+              src="/almodesk_logo.jpeg" 
+              alt="Almodesk Logo" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
