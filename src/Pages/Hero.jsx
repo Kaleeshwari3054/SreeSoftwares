@@ -93,7 +93,7 @@
 // export default Hero;
 // Hero.jsx
 import React from "react";
-import banner from "../assets/banner.jpeg";
+import banner from "../assets/Banner.jpeg";
 import "../Styles/Heros.css";
 
 const Hero = () => {
