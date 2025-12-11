@@ -1,21 +1,21 @@
 // Clients.jsx
 import React from "react";
-import almo1 from "../assets/clients/almo-1.jpeg";
-import almo2 from "../assets/clients/almo-2.jpeg";
-import almo3 from "../assets/clients/almo-3.jpeg";
-import almo4 from "../assets/clients/almo-4.jpeg";
-import almo5 from "../assets/clients/almo-5.jpeg";
-import almo6 from "../assets/clients/almo-6.jpeg";
-import almo7 from "../assets/clients/almo-7.jpeg";
-import almo8 from "../assets/clients/almo-8.jpeg";
-import almo9 from "../assets/clients/almo-9.jpeg";
-import almo10 from "../assets/clients/almo-10.jpeg";
-import almo11 from "../assets/clients/almo-11.jpeg";
-import almo12 from "../assets/clients/almo-12.jpeg";
-import almo13 from "../assets/clients/almo-13.jpeg";
-import almo14 from "../assets/clients/almo-14.jpeg";
-import almo15 from "../assets/clients/almo-15.jpeg";
-import almo16 from "../assets/clients/almo-16.jpg";
+import almo1 from "../assets/clients/Almo-1.jpeg";
+import almo2 from "../assets/clients/Almo-2.jpeg";
+import almo3 from "../assets/clients/Almo-3.jpeg";
+import almo4 from "../assets/clients/Almo-4.jpeg";
+import almo5 from "../assets/clients/Almo-5.jpeg";
+import almo6 from "../assets/clients/Almo-6.jpeg";
+import almo7 from "../assets/clients/Almo-7.jpeg";
+import almo8 from "../assets/clients/Almo-8.jpeg";
+import almo9 from "../assets/clients/Almo-9.jpeg";
+import almo10 from "../assets/clients/Almo-10.jpeg";
+import almo11 from "../assets/clients/Almo-11.jpeg";
+import almo12 from "../assets/clients/Almo-12.jpeg";
+import almo13 from "../assets/clients/Almo-13.jpeg";
+import almo14 from "../assets/clients/Almo-14.jpeg";
+import almo15 from "../assets/clients/Almo-15.jpeg";
+import almo16 from "../assets/clients/Almo-16.jpg";
 import "../Styles/Clients.css";
 
 const Clients = () => {
